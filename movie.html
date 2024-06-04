@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Ratings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
+  <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+  <div class="heading">
+    <h1>Favorite Movie Ratings</h1>
+
+    <form class="main-ratings-form" id="new-rating-form">
+      <div class="ratings-form-group">
+        <label for="title">Title
+        <input type="text" required id="title" class="form-input">
+      </div>
+
+      <div class="ratings-form-group">
+        <label for="rating">Rating
+        <input type="number" required min="0" max="10" id="rating" class="form-input">
+      </div>
+
+      <div class="ratings-form-group">
+        <button type="submit" class="submit-btn form-input">Submit!</button>
+      </div>
+    </form>
+  </div>
+
+  <br>
+  <div class="main-table-container">
+    <table class="main-table">
+      <thead class="main-table-head">
+        <tr>
+          <th scope="col">Title <i id="title" class="fas  fa-sort-down"></i></th>
+          <th scope="col">Rating <i id="rating" class="fas   fa-sort-down"></i></th>
+          <th scope="col">Delete</i></th>
+        </tr>
+      </thead>
+
+      <tbody id="movie-table-body">
+
+      </tbody>
+    </table>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="movie.js"></script>
+
+</body>
+</html>
